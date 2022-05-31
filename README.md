@@ -46,6 +46,16 @@ Após isso criamos um mapa de calor para analisar se existe forte correlação e
 
 <p align="center"><img src="https://github.com/mvsampaio98/Ford-Cars-Price-Prediction/blob/main/img/Figura2.PNG" alt="Figura2"></p>
 
+* Existe uma forte correlação entre Price x Year. É notável que quanto mais novo for o carro, maior será seu preço.
+* Existe uma forte correlação negativa entre Price x Milleage. Quanto mais milhas rodadas o carro possui, menor será seu preço.
+* Com relação ao preço notamos que existem correlações com as outras variáveis, somente o tipo de transmissão não nos diz muita coisa.
+
+Agora chegou a hora de treinarmos o nosso modelo ! Visto que temos correlações consideravelmente fortes, optei por utilizar o modelo de Regressão Linear. Esta etapa, vale conferir no próprio arquivo notebook que contém todas as explicações e etapas do treinamento e teste do modelo.
+
+O resultado final da nossa análise preditiva apontou uma eficiência de **74,4%** com o desvio padrão de cerca de **US2340**.
+
+No final das contas o nosso modelo está errando por volta de 2340 dolares o que acaba sendo uma diferença grande para um possível vendedor do veículo. Talvez essa discrepância foi gerada devido o DataFrame ter vários modelos de carros diferentes. Ou seja, acabou que não foi levado em consideração por exemplo o preço da matéria-prima ou tecnologia embutida neste veículo. Um caso prático: Um Ford Mustang possui tecnologias mais avançadas do que um Ford Ka e foram todos colocados na mesma pesquisa sem levar em conta isso. Uma solução para esse problema seria filtrar nosso DataFrame pelo tipo de modelos de carro, garantindo assim uma analise mais certeira. Para trabalhos futuros, acredito que separando os modelos de carros populares com valores entre US10000 e US25000, aumentaria a taxa de acerto da nossa análise preditiva.
+
 ## Fale comigo !
 * Entre em contato comigo pelo meu [LinkedIn](https://www.linkedin.com/in/marcelo-victor-sa-coqueiro-sampaio/).
 * Me envie um [E-mail](mailto:mvsampaio98@gmail.com) !
